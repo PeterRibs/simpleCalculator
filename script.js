@@ -15,10 +15,6 @@ const getNumber = (i) => {
     }
 }
 
-const getNumber2 = (i) => {
-    input2.value = input2.value + btnNumber[i].firstChild.data;
-}
-
 const changeInput = () => {
     if (change.textContent === " >> ") {
         change.textContent = " << ";
