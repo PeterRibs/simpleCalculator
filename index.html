@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Calculator</h1>
+        </header>
+        <div class="down">
+            <div class="values">
+                <h2 id="result">Result: </h2>
+                <h2 id="calculation">Calculation: <h3></h3></h2>
+                <div class="numberInput">
+                    <input  id="input1" class="changeInput"/>
+                    <button id="change" onclick="changeInput()" class="classChange"> >> </button>
+                    <input  id="input2"/>
+                </div>
+            </div>
+            <table class = "buttons">
+                <tr>
+                    <td><button class = "btn numberBtn" onclick="getNumber(0)">7</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(1)">8</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(2)">9</button></td>
+                    <td><button class = "btn divide operationBtn" onclick="divide()">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class = "btn numberBtn" onclick="getNumber(4)">4</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(5)">5</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(6)">6</button></td>
+                    <td><button class = "btn multiply operationBtn" onclick="multiply()">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class = "btn numberBtn" onclick="getNumber(8)">1</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(9)">2</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(10)">3</button></td>
+                    <td><button class = "btn subtract operationBtn" onclick="subtract()">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class = "btn numberBtn" onclick="getNumber(12)">0</button></td>
+                    <td><button class = "btn AC" onclick="ac()">AC</button></td>
+                    <td><button class = "btn numberBtn" onclick="getNumber(14)">.</button></td>
+                    <td><button class = "btn sum operationBtn" onclick="sum()">+</button></td>
+                </tr>
+            </table>
+        </div>    
+        <script type="text/javascript" src="./script.js"></script>
+    </div>
+</body>
+</html>
